@@ -1,0 +1,5 @@
+input,button,.upload{border:1px solid #dce3dd;border-radius:10px;padding:11px 14px;background:white;font:inherit}
+button,.upload{cursor:pointer;color:#0b6b43}.upload input{display:none}
+.import{margin-top:36px;display:flex;gap:20px;align-items:center;justify-content:space-between;background:#e8f1eb;border-radius:18px}
+.import p{color:#637067;max-width:680px}.cards article a{font-size:12px}.cards article{gap:8px}
+@media(max-width:800px){.import{align-items:flex-start;flex-direction:column}}
