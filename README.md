@@ -1,6 +1,6 @@
 # Ethiopia ESX Data
 
-A deliberately small, dependency-free dashboard for ESX-listed companies and five Ethiopian economic indicators.
+A deliberately small dashboard for ESX-listed companies and five sourced Ethiopian economic indicators.
 
 ## Run
 
@@ -12,7 +12,11 @@ npm start
 
 Open `http://localhost:3000`. Run checks with `npm test`.
 
-The SQLite database is created automatically as `data.db`. Indicator cards stay blank until a verified value is stored, so the interface never presents invented figures.
+The SQLite database is created automatically as `data.db`. Current values include their period and source URL. The World Bank button imports historical GDP, inflation and reserve observations from its public API.
+
+## Excel import
+
+Create an `.xlsx` file with a sheet named `Indicators`. Its headings are `name`, `period`, `value`, `source`, and `source_url`. The name must match one of the five indicator names. For a deployed site, set `IMPORT_KEY` and enter that key when importing.
 
 ## Data model
 
